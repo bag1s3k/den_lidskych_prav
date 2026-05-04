@@ -16,6 +16,8 @@ body {
     font-style: normal;
     color: var(--dark-grey);
     height: 100%;
+    padding: 0 15%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -23,11 +25,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    padding: 3em 6em;
+    padding: 3em 10%;
     background: white;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 nav h1 {
@@ -39,10 +43,6 @@ nav a {
     text-decoration: none;
     margin: 0 1em;
     color: var(--dark-grey);
-}
-
-.border {
-    padding: 0em 10em;
 }
 
 #page1-container {
@@ -80,6 +80,7 @@ nav a {
 
 #cards {
     display: flex;
+    justify-content: center;
     gap: 1em;
 }
 
@@ -88,7 +89,6 @@ nav a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1em;
     font-size: 1.5em;
-    border-radius: 2em;
     text-align: center;
 }
 
