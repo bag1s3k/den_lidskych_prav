@@ -115,7 +115,6 @@ function renderWorkshops() {
         <div class="comic-card-footer">
           <span class="comic-badge badge-tutor">${workshop.jmeno}</span>
           <span class="comic-badge badge-room">Učebna: ${workshop.ucebna}</span>
-          <span class="comic-badge badge-capacity">Kapacita: ${workshop.kapacita}</span>
         </div>
       </article>
     `;
