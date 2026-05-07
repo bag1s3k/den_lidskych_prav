@@ -101,7 +101,7 @@ nav a {
 
 .headers h1 {
     font-size: 5em;
-    margin-bottom: 0.3em;
+    margin: 1em 0 0.3em 0;
 }
 
 #about {
@@ -209,3 +209,17 @@ nav a {
 .badge-tutor { background-color: #00e5ff; }
 .badge-room { background-color: #ff9900; }
 .badge-capacity { background-color: #ffffff; }
+
+table { box-shadow: 12px 12px black; margin-bottom: 2em;}
+
+table, th, td {
+    border: 5px solid black;
+    font-size: 1.4em;
+    padding: 10px 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-phone {
+    display: none;
+}
