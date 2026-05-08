@@ -17,7 +17,7 @@ body {
     font-style: normal;
     color: var(--dark-grey);
     height: 100%;
-    padding: 0 15%;
+    padding: 0 12%;
     overflow-x: hidden;
 }
 
@@ -47,6 +47,7 @@ nav a {
 }
 
 #page1-container {
+    display: flex;
     height: 100%;
     display: flex;
     gap: 5em;
@@ -210,7 +211,15 @@ nav a {
 .badge-room { background-color: #ff9900; }
 .badge-capacity { background-color: #ffffff; }
 
-table { box-shadow: 12px 12px black;}
+#timetable-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table { 
+    box-shadow: 12px 12px black;
+}
 
 table, th, td {
     border: 5px solid black;
@@ -304,10 +313,16 @@ table, th, td {
 /* ------------------------------------------
     RESPONSIVE DESIGN
 --------------------------------------------*/
+@media (max-width: 2370px) {
+    table, th, td {
+        font-size: 1.3em;
+        padding: 7px;
+    }
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 1920px) {
     body {
-        padding: 0 3em;
+        padding: 0 6em;
         overflow-x: visible;
     }
 
@@ -315,35 +330,112 @@ table, th, td {
         padding: 1em 0;
     }
 
-    nav h1 {
-        margin: 0;
-        font-size: 1.5em;
+    table, th, td {
+        font-size: 1.2em;
     }
 
-    #page1-container h1 {
-        font-size: 5em;
+    .pop-footer {
+        margin-top: 10em;
+    }
+}
+
+@media (max-width: 1674px) {
+    table, th, td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1450px) {
+    table, th, td {
+        font-size: 1.1em;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1304px) {
+    body {
+        padding: 0 2em;
     }
 
-    #page1-container img {
-        height: 25em;
-    }
-
-    #page1-container p {
-        font-size: 1.3em;
+    #page1-container {
+        margin-top: 2em;
+        padding: 0 2em;
     }
 
     .workshops-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .table-phone { 
+@media (max-width: 1168px) {
+    #page1-container h1 {
+        font-size: 5.1em;
+    }
+
+    #page1-container p {
+        font-size: 1.5em;
+    }
+
+    #page1-container img {
+        height: 30em;
+    }
+
+    table, th, td {
+        font-size: 1.4em;
+    }
+
+    .table-phone {
         display: inline-table;
         width: 100%;
     }
 
-    .table-pc { display: none; }
+    .table-pc {
+        display: none;
+    }
+}
 
-    .pop-footer {
-        margin-top: 10em;
+@media (max-width: 1080px) {
+    nav {
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    nav h1 {
+        font-size: 2.2em;
+    }
+
+    #page1-container {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    #page1-container h1 {
+        font-size: 10em;
+    }
+
+    #page1-container p {
+        font-size: 3em;
+    }
+
+    #page1-container img {
+        height: 38em;
+    }
+
+    .workshops-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+        #page1-container h1 {
+        font-size: 8em;
+    }
+
+    #page1-container p {
+        font-size: 2.5em;
+    }
+
+    #page1-container img {
+        height: 33em;
     }
 }
