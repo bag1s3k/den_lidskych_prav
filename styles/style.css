@@ -402,6 +402,7 @@ table, th, td {
 
     nav div a {
         font-size: 1.3em;
+        margin: 0 10px;
     }
 
     .headers {
