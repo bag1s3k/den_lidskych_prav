@@ -179,7 +179,7 @@ nav a {
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
-    background-color: #ffd700;
+    background-color: #ffee00;
     display: inline-block;
     padding: 0.3rem 0.6rem;
     border: 3px solid #000000;
@@ -229,6 +229,10 @@ table, th, td {
     padding: 10px 10px;
     border-collapse: collapse;
     text-align: center;
+}
+
+td {
+    word-wrap: break-word;
 }
 
 .table-phone {
@@ -325,7 +329,6 @@ table, th, td {
     }
 
     table, th, td {
-        font-size: 1.1em;
         padding: 5px;
     }
 
@@ -341,6 +344,18 @@ table, th, td {
 
     #page1-container {
         margin-top: 2em;
+    }
+
+    #page1-container h1 {
+        font-size: 5em;
+    }
+
+    #page1-container p {
+        font-size: 1.5em;
+    }
+
+    #page1-container img {
+        height: 25em;
     }
 
     .table-pc {
@@ -360,7 +375,7 @@ table, th, td {
     }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1068px) {
     nav {
         gap: 1em;
         flex-direction: column;
@@ -373,19 +388,6 @@ table, th, td {
     #page1-container {
         flex-direction: column-reverse;
         margin-top: 0;
-    }
-
-    #page1-container h1 {
-        font-size: 5em;
-    }
-
-    #page1-container p {
-        font-size: 1.5em;
-    }
-
-    #page1-container img {
-        height: auto;
-        max-width: 100%;
     }
 
     .workshops-grid {
