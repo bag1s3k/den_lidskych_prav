@@ -220,7 +220,7 @@ nav a {
 }
 
 table { 
-    box-shadow: 12px 12px black;
+    box-shadow: 8px 8px black;
 }
 
 table, th, td {
@@ -424,6 +424,10 @@ td {
 
     #page1-container p {
         font-size: 1.2em;
+    }
+
+    #footer-anchor {
+        scroll-margin-top: 8em;
     }
 }
 
