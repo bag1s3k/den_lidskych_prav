@@ -199,6 +199,8 @@ nav a {
     gap: 1.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .comic-card:hover {
@@ -216,11 +218,6 @@ nav a {
     padding: 0.3rem 0.6rem;
     border: 3px solid #000000;
     transform: rotate(-2deg); 
-}
-
-#card-href {
-    text-decoration: none;
-    color: black;
 }
 
 .comic-description {
